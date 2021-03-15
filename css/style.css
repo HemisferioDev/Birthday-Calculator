@@ -4,3 +4,125 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
+
+.main-container {
+  width: 1100px;
+  max-width: 100%;
+  padding: 0 .5em;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  width: 100%;
+  background-color: #FEEB3D;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+span.invite {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.input-container > div {
+  margin: 0 auto;
+}
+
+span.birthday {
+  margin-top: 1em;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-left: 0;
+}
+
+@media (min-width: 600px) {
+  span.birthday {
+    font-size: 2.5rem;
+    margin-left: 1.5em;
+  }
+}
+
+.inputDay {
+  width: 90%;
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 1em 5%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+@media (min-width: 600px) {
+  .inputDay {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 990px) {
+  .inputDay {
+    width: 40%;
+  }
+}
+
+.daysremaining-container {
+  width: 100%;
+  background-color: #484848;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  color: #fff;
+}
+
+.date-calculated {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 400px) {
+  .date-calculated {
+    font-size: 2.5rem;
+  }
+}
+
+.months-days {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.button-container {
+  width: 100%;
+  background-color: #E96C36;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.btnCalculate {
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  padding: .5em;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btnCalculate:hover {
+  color: #E96C36;
+  background: white;
+  transition: all .5s;
+}
